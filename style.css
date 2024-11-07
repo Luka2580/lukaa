@@ -1,0 +1,26 @@
+.pozadina{
+    background-image:url(./images/brodovi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+body {
+    overflow-x: hidden;
+    font-size: 1.1rem;
+    color: #222222;
+    font-family: 'Poppins', sans-serif
+}
+
+.boja-pozadine{
+    background-color: rgb(247, 247, 247);
+}
+
+.row.razmak{
+    --bs-gutter-x: 3rem !important;
+}
+.boja-naslova{
+    color: white;
+}
+

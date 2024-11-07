@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luka Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<style>
+    .form-row {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
+</style>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white p-3 shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="logo" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+			</button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html">Naslovnica</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html#o-meni">O meni</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html#usluge">Usluge</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html#galerija">Galerija</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pozadina mt-5 pt-5">
+        <div class="containter h-100">
+        <div class="row h-100 d-flex text-center justify-content-center align-items-end">
+            <div class="col-lg-12 col-xs-12">
+                <h1 class="boja-naslova fw-bold pb-3">Luka Photography</h1>
+                <p><br></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center mt-3" id="kontakt2">Kontakt</h1>
+        <div class="row my-5">
+            <div class="col-lg-4 col-xs-12 text-center">
+                <img src="images/telefon.svg" alt="telefon" width="100">
+                <p class="mt-3">+385 91 522 6932</p>
+            </div>
+            <div class="col-lg-4 col-xs-12 text-center">
+                <img src="images/email.svg" alt="email" width="115">
+                <p class="mt-3">lukaksc@gmail.com</p>
+            </div>
+            <div class="col-lg-4 col-xs-12 text-center">
+                <img src="images/instagram.svg" alt="instagram" width="100">
+                <p class="mt-3"><a href="https://www.instagram.com/lukakosic.ph/">lukakosic.ph</a></p>
+            </div>
+        </div>
+
+
+    <div class="row my-5 mx-5">
+    <div class="col-lg-6 col-xs-12">
+        <form action="https://formspree.io/f/xbjndbep" method="POST">
+        
+            <div class="mb-3">
+                <label for="name" class="form-label">Ime:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="message" class="form-label">Poruka:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+        
+            <div class="mb-3">
+                <button class="btn btn-success btn-md rounded" type="submit">Pošalji</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-6 col-xs-12">
+        <h5>Lokacija</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89732.71830814074!2d14.349045324034389!3d45.34583577886161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a12517aabe2d%3A0x373c6f383dcbb670!2sRijeka!5e0!3m2!1shr!2shr!4v1706525096274!5m2!1shr!2shr" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+</div>
+</div>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (!name || !email || !message) {
+            alert("Please fill out all fields.");
+            event.preventDefault();
+        }
+    });
+</script>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
